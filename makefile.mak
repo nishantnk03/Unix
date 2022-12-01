@@ -2,12 +2,12 @@
 
 all: README.md
 
-README.md: guessinggame.sh
+README.md: guess.sh
 	touch README.md
-	echo "# guessinggame" > README.md
+	echo "# guessgame" > README.md
 	echo $$(date) >> README.md
 	echo "  \n" >> README.md
-	wc -l guessinggame.ksh | egrep -o "[0-9]+" >> README.md
+	wc -l guess.sh | egrep -o "[0-9]+" >> README.md
 clean:
 	rm README.md
 	
